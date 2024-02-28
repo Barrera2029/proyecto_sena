@@ -1,3 +1,13 @@
+<?php //CÓDIGO PARA MANTENER LA SESIÓN INICIA 
+
+    session_start();
+
+    if(isset($_SESSION['nombre_u'])){
+        header("location: bienvenida.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,20 +36,20 @@
                 <p class="texto1">Por favor ingrese los datos solicitados</p>
             </div>
 
-            <form> <!--ESPACIOS PARA INGRESAR EL EMAIL Y LA CONSTRASEÑA-->
+            <form action="php/login_user.php" method="POST"> <!--ESPACIOS PARA INGRESAR EL EMAIL Y LA CONSTRASEÑA-->
                 <div class="content2">
                     <label class="datos1" for="correo1">Email</label> <br> <br>
-                    <input type="email" id="correo1" name="correo1" required placeholder=" alguien@vitelsa.com.co"> <br> <br>
+                    <input type="email" id="correo1" name="email" required placeholder=" alguien@vitelsa.com.co"> <br> <br>
 
                     <label class="datos2" for="contrasena_p">Contraseña</label> <br> 
-                    <input type="password" id="contrasena_p" name="contrasena_p" required placeholder=" contraseña"> <br>
+                    <input type="password" id="contrasena_p" name="contrasena" required placeholder=" contraseña"> <br>
                     
                     <!--OPCIONES ADICIONALES-->
                     <input class="recordar" type="checkbox" name="recordar" value="recordar"> Recordarme</input> 
                     <span class="link">Olvidó su contraseña?</span> <br> 
                 </div>
 
-                <div class="content3"> <!--VALIDACIÓN DE USUARIO Y REGISTRO-->
+                <div class="content3"> <!--BOTON DE INGRESO-->
                     <button id="boton-entrar"><b>Entrar</b></button> <br><br>
                     <span>No tienes cuenta?</span> 
                     <a class="content3-1" href="register.php" target=".blank">Regístrate</a>

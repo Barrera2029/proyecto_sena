@@ -17,7 +17,8 @@
             <h1>Registro De Usuario</h1>
             <p class="text-caption">Por favor ingrese los datos solicitados</p>
         </div>
-
+        <!-- FORMULARIO DE REGISTRO
+        USO DE METODO POST PARA QUE LA INGRESAR LOS DATOS NO SE MUESTREN EN EL NAVEGADOR (URL) -->
         <form action="php/save.php" method="POST" id="form">
             <div class="form">
                 

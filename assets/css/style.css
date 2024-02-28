@@ -1,0 +1,94 @@
+body {
+    background-color: #667085;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen-container {
+  position: absolute;
+  left: 48%;
+  height: 60px; /* Ajusta la altura según tus necesidades */
+}
+
+.imagen-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+  
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #6184FF; /* Azul */
+    color: #ffffff; /* Blanco */
+    margin: 10px;
+    padding: 10px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  
+.titulo {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.buscar-button, .boton-esq, .agregar-doc{
+  cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #6184FF;
+    border: none;
+    border-radius: 10px;
+}
+
+.boton-esq {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.contenedor-title {
+    background-color: #344054; /* Azul */
+    color: #ffffff; /* Blanco */
+    padding: 3px;
+  }
+  
+.subtitulo {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.barra-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .barra-busqueda input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .barra-busqueda button {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .agregar-doc{
+    position: absolute;
+  }
+
+  .agregar-docs button {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
